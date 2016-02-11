@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<navigationModel
+  ns = "http://schemas.android.com?import=com.android.tools.idea.editors.navigation.model.*">
+  <locations  
+    class = "java.util.ArrayList">
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.ActivityState"      
+        className = "com.slashstudios.nicknagi.texter.HomeScreen"/>
+      <point      
+        x = "1800"      
+        y = "304"/>
+    </statePointEntry>
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.ActivityState"      
+        className = "com.slashstudios.nicknagi.texter.ContactsListView"/>
+      <point      
+        x = "556"      
+        y = "1572"/>
+    </statePointEntry>
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.ActivityState"      
+        className = "com.slashstudios.nicknagi.texter.SchedulingScreen"/>
+      <point      
+        x = "40"      
+        y = "32"/>
+    </statePointEntry>
+  </locations>
+</navigationModel>

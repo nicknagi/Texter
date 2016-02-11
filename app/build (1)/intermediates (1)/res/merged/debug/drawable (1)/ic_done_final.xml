@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:drawable="@drawable/ic_done"
+        android:right="6dp"
+        android:top="2dp"/>
+
+
+</layer-list><!-- From: file:/C:/Users/nicknagi/Google%20Drive/Texter/app/src/main/res/drawable/ic_done_final.xml -->

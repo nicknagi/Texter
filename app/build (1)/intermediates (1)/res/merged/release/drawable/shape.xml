@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <shape xmlns:android="http://schemas.android.com/apk/res/android">
+        <stroke android:width="1dip" android:color="#00BCD4" />
+    </shape>
+<!-- From: file:/C:/Users/nicknagi/Google%20Drive/Texter/app/src/main/res/drawable/shape.xml -->

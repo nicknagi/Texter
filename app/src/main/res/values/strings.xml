@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Texter</string>
+    <string name="main_menu">Texter</string>
+    <string name="action_settings">settings</string>
+    <string name="title_activity_new_screen">Compose</string>
+    <string name="findContact">Search Contacts</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_contacts_list_view">ContactsListView</string>
+    <string name="banner_ad_unit_id_scheduling">ca-app-pub-8012649357958437/2012171908</string>
+    <string name="banner_ad_unit_id_homescreen">ca-app-pub-8012649357958437/5803243106</string>
+
+
+</resources>

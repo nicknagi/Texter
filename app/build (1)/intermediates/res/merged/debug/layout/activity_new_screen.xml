@@ -1,0 +1,168 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SchedulingScreen">
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        ads:adSize="SMART_BANNER"
+        ads:adUnitId="@string/banner_ad_unit_id_scheduling"></com.google.android.gms.ads.AdView>
+
+    <include
+        android:id="@+id/tool_bar"
+        layout="@layout/tool_bar"></include>
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:bootstrap="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/ScrollView01"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/adView"
+        android:fillViewport="true"
+        android:scrollbars="vertical">
+        ------- here RelativeLayout ------
+
+        <LinearLayout
+            xmlns:bootstrap="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/LinearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/adView"
+                tools:context=".SchedulingScreen">
+
+
+                <ImageView
+                    android:id="@+id/ivContact"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="100dp"
+                    android:src="@drawable/ic_contact" />
+
+                <!-- basic button -->
+                <!-- basic button -->
+                <com.beardedhen.androidbootstrap.BootstrapButton
+                    android:id="@+id/bLabel1"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/ivContact"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginTop="16dp"
+                    android:onClick="RemoveContact"
+                    android:text="a"
+                    bootstrap:bb_icon_right="fa-times"
+                    bootstrap:bb_type="primary" />
+
+                <com.beardedhen.androidbootstrap.BootstrapButton
+                    android:id="@+id/bLabel2"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:layout_alignTop="@+id/bLabel1"
+                    android:layout_marginLeft="16dp"
+                    android:layout_toEndOf="@+id/bLabel1"
+                    android:layout_toRightOf="@+id/bLabel1"
+                    android:onClick="RemoveContact"
+                    android:text="b"
+                    bootstrap:bb_icon_right="fa-times"
+                    bootstrap:bb_type="primary" />
+
+                <com.beardedhen.androidbootstrap.BootstrapButton
+                    android:id="@+id/bLabel3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_alignTop="@+id/bLabel1"
+                    android:layout_marginLeft="16dp"
+                    android:layout_toEndOf="@+id/bLabel2"
+                    android:layout_toRightOf="@+id/bLabel2"
+                    android:onClick="ShowList"
+                    android:text=".. 5 more"
+                    bootstrap:bb_type="primary" />
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/etMessage"
+                    android:layout_width="280dp"
+                    android:layout_height="125dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="200dp"
+                    android:ems="10"
+                    android:gravity="bottom"
+                    android:hint="Message"
+                    android:inputType="textMultiLine"
+                    android:scrollbars="vertical"
+                    app:met_iconLeft="@drawable/ic_message"
+                    app:met_maxCharacters="160" />
+
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/etDate"
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignTop="@+id/etTime"
+                    android:layout_marginLeft="16dp"
+                    android:editable="false"
+                    android:ems="10"
+                    android:gravity="bottom"
+                    android:hint="Date"
+                    android:inputType="none"
+                    android:scrollbars="vertical"
+                    android:singleLine="false"
+                    app:met_iconLeft="@drawable/ic_clock" />
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/etTime"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/etMessage"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="86dp"
+                    android:layout_toEndOf="@+id/etDate"
+                    android:layout_toRightOf="@+id/etDate"
+                    android:editable="false"
+                    android:ems="10"
+                    android:gravity="bottom"
+                    android:hint="Time"
+                    android:inputType="none"
+                    android:scrollbars="vertical"
+                    android:singleLine="false" />
+
+                <Button
+                    android:id="@+id/bContacts"
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/ivContact"
+                    android:layout_toLeftOf="@+id/etTime"
+                    android:layout_toStartOf="@+id/etTime"
+                    android:backgroundTint="#8BC34A"
+                    android:onClick="LaunchContactPicker"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:text="ADD NEW"
+                    android:textColor="#ffffff" />
+
+
+            </RelativeLayout>
+        </LinearLayout>
+
+    </ScrollView>
+</RelativeLayout>
+<!-- From: file:/C:/Users/nicknagi/Google%20Drive/Texter/app/src/main/res/layout/activity_new_screen.xml -->
